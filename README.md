@@ -5,7 +5,7 @@ This repository contains DNA-PAINT analysis codes designed for filtering non-spe
 # Cluster Filtering Script 
 
 ## Description
-This script analyzes cluster data in CSV files, filtering non-specific binding events and categorizing clusters into receptor. Results are saved in separate CSV files per input, and a consolidated file is created.
+This script analyzes cluster data in CSV files, filtering non-specific binding events. Results are saved in separate CSV files per input, and a consolidated file is created.
 
 ## Files
 1. **Script: `cluster_processing_script.py`**
@@ -42,6 +42,15 @@ This script analyzes cluster data in CSV files, filtering non-specific binding e
 3. Run:
    ```bash
    python cluster_processing_script.py
+4. Results saved in CSV files.
+
+## Dependencies
+Requires: os, pandas, seaborn, glob.
+## Notes
+1. Adapt the script for specific data requirements.
+2. Assumes well-formatted CSV files; update if data structure differs.
+3. For customization, refer to individual functions.
+
 
 # DNA-PAINT Cluster Analysis
 
