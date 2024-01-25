@@ -19,6 +19,9 @@ This script analyzes cluster data in CSV files, filtering non-specific binding e
    - `image_i_stat.csv`: Statistics for receptor clusters.
    - `image_i_result.csv`: Filtered receptor clusters.
    - `allstats.csv`: Consolidated statistics.
+   - 
+## Dependencies
+Requires: os, pandas, seaborn, glob.
 
 ## Functions
 
@@ -44,53 +47,39 @@ This script analyzes cluster data in CSV files, filtering non-specific binding e
    python cluster_processing_script.py
 4. Results saved in CSV files.
 
+
+# Edge Distances Calculation Script Readme
+
+## Description
+This script calculates edge distances between clusters in CSV files. It produces a DataFrame with ClusterID, NearestClusterID, and EdgeDistance columns. The script also saves the result DataFrame to a new CSV file and generates a histogram plot of the edge distances.
+
+## Files
+1. **Script: `edge_distances_script.py`**
+   - Main script with functions for edge distances calculation and result visualization.
+
 ## Dependencies
-Requires: os, pandas, seaborn, glob.
-## Notes
-1. Adapt the script for specific data requirements.
-2. Assumes well-formatted CSV files; update if data structure differs.
-3. For customization, refer to individual functions.
+- Requires: `os`, `glob`, `pandas`, `numpy`, `scipy`, `matplotlib`.
 
-
-# DNA-PAINT Cluster Analysis
-
-This repository contains Python scripts for analyzing DNA-PAINT data, specifically focusing on filtering non-specific binding events, unwanted localizations, and calculating distances between clusters.
-
-## Script Descriptions:
+## Functions
 
 ### `calculate_edge_distances(data)`
-
-Calculates the edge distances between clusters in the given DataFrame.
-
-- **Parameters:**
-  - `data`: DataFrame containing cluster data.
-- **Returns:**
-  - DataFrame with columns: ClusterID, NearestClusterID, and EdgeDistance.
+- Calculates edge distances between clusters in the given DataFrame.
+- Returns a DataFrame with ClusterID, NearestClusterID, and EdgeDistance columns.
 
 ### `save_result_csv_and_plot(result_df, csv_file)`
-
-Saves the result DataFrame to a new CSV file and plots the edge distances histogram.
-
-- **Parameters:**
-  - `result_df`: DataFrame with ClusterID, NearestClusterID, and EdgeDistance columns.
-  - `csv_file`: Path to the input CSV file.
-- **Returns:**
-  - None
+- Saves the result DataFrame to a new CSV file.
+- Plots the edge distances histogram.
 
 ### `process_csv_files()`
+- Main function to process multiple CSV files and calculate edge distances.
 
-Main function to process multiple CSV files and calculate edge distances.
+## Usage
+1. Place CSV files in the script directory.
 
-- **Parameters:**
-  - None
-- **Returns:**
-  - None
+2. Run the script:
+   ```bash
+   python edge_distances_script.py
+Resulting CSV files and edge distance histograms will be generated for each input CSV.
 
-## Usage:
-
-1. Ensure you have Python installed on your machine.
-2. Place your CSV files in the same directory as the script.
-3. Run the script using `python script_name.py` in the terminal.
-
-The script will process each CSV file, calculate edge distances between clusters, save results in new CSV files, and generate histograms for edge distances.
+3. The script will print the mean edge distance for each CSV file.
 
