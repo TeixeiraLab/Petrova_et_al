@@ -4,7 +4,7 @@ This repository contains DNA-PAINT analysis codes designed for filtering non-spe
 
 ===========
 
-# HDF5 Data Filtering and Histogram Plotting Script 
+# Picasso Files Filtering Script 
 
 ## Description
 This script filters data from HDF5 files generated from Picasso based on specified thresholds and generates histograms for selected columns. The filtered data is saved as a CSV file, and histograms are saved as JPG files.
