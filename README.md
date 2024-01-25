@@ -5,19 +5,19 @@ This repository contains DNA-PAINT analysis codes designed for filtering non-spe
 # Cluster Filtering Script 
 
 ## Description
-This script analyzes cluster data in CSV files, filtering non-specific binding events and categorizing clusters into receptor and artificial. Results are saved in separate CSV files per input, and a consolidated file is created.
+This script analyzes cluster data in CSV files, filtering non-specific binding events and categorizing clusters into receptor. Results are saved in separate CSV files per input, and a consolidated file is created.
 
 ## Files
 1. **Script: `cluster_processing_script.py`**
    - Main script with functions for data processing.
 
 2. **Input Files:**
-   - `image_i_filtered_DataCalled.csv`: Cluster data for images (i = 1 to 8).
-   - `image_i_filtered_ClusterStats.csv`: Cluster stats for images (i = 1 to 8).
+   - `image_i_filtered_DataCalled.csv`: Cluster data for images.
+   - `image_i_filtered_ClusterStats.csv`: Cluster stats for images.
 
 3. **Output Files:**
-   - `image_i_stat.csv`: Statistics for receptor clusters (i = 1 to 8).
-   - `image_i_result.csv`: Filtered receptor clusters (i = 1 to 8).
+   - `image_i_stat.csv`: Statistics for receptor clusters.
+   - `image_i_result.csv`: Filtered receptor clusters.
    - `allstats.csv`: Consolidated statistics.
 
 ## Functions
