@@ -79,7 +79,8 @@ This script calculates edge distances between clusters in CSV files. It produces
 2. Run the script:
    ```bash
    python edge_distances_script.py
-Resulting CSV files and edge distance histograms will be generated for each input CSV.
 
-3. The script will print the mean edge distance for each CSV file.
+3. Resulting CSV files and edge distance histograms will be generated for each input CSV.
+
+4. The script will print the mean edge distance for each CSV file.
 
